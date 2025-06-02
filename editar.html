@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar</title>
+    <link rel="stylesheet" href="./css/editar.css">
+</head>
+<body>
+    <header>
+        <div class="container header-content">
+            <h1>Catálogo de Itens</h1>
+            <nav class="nav-item">
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="editar-sec">
+        <h1>Editar Item</h1>
+        <div class="container">
+            <fieldset>
+                <form>
+                    <label for="nome">Nome</label>
+                    <input type="text" name="nome" id="nome" placeholder="" required>
+                    <label for="categoria">Categoria</label>
+                    <select name="categoria" id="categoria" required>
+                        <option value="" disabled>Categoria</option>
+                        <option value="ferramenta-robotica" class="categoria-value">Ferramenta de Robótica</option>
+                        <option value="computador" class="categoria-value">Computador</option>
+                        <option value="Movel" class="categoria-value">Móvel</option>
+                    </select>
+                    <label for="status">Status</label>
+                    <select name="status" id="status" required>
+                        <option value="" disabled>Status</option>
+                        <option value="em-uso" class="status-value">Em Uso</option>
+                        <option value="dispensado" class="status-value">Dispensado</option>
+                        <option value="quebrado" class="status-value">Quebrado</option>
+                        <option value="em-reforma" class="status-value">Em Reforma</option>
+                    </select>
+                    <button id="editarBtn">Editar</button>
+                </form>
+            </fieldset>
+        </div>
+    </section>
+
+    <script type="module" src="./scripts/editar.js"></script>
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Itens</title>
+
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+    <header>
+        <div class="container header-content">
+            <h1>Catálogo de Itens</h1>
+            <nav class="nav-item">
+                <ul>
+                    <li><a href="./cadastrar-item.html">Cadastrar Item</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home">
+        <div class="container">
+            <div class="search-div">
+                <label for="pesquisar">Pesquisar
+                <input type="text" id="pesquisar" name="pesquisar" placeholder="Pesquisar..." onchange="pesquisarAoDitgitar()">
+                </label>
+                <button id="pesquisar-btn">Pesquisar</button>
+                
+            </div>
+            <details>
+                <summary>Filtros</summary>
+            
+                <details>
+                    <summary>Categorias</summary>
+                    <ul class="ul-column">
+                        <li>
+                            <input type="checkbox" name="computador" id="computador-checkbox" value="computador" class="check-categorias">
+                            <label for="computador-checkbox">Computador</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="ferramenta-robotica" id="ferramenta-robotica-checkbox" value="ferramenta-robotica" class="check-categorias">
+                            <label for="ferramenta-robotica-checkbox">Ferramenta de Robótica</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="movel" id="movel-checkbox" value="movel" class="check-categorias">
+                            <label for="movel-checkbox">Móvel</label>
+                        </li>
+                    </ul>
+                </details>
+            
+                <details>
+                    <summary>Status</summary>
+                    <ul class="ul-column">
+                        <li>
+                            <input type="checkbox" name="em-uso" id="status-em-uso" value="em-uso" class="check-status">
+                            <label for="status-em-uso">Em uso</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="quebado" id="status-quebado" value="quebrado" class="check-status">
+                            <label for="status-quebado">Quebrado</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="em-reforma" id="status-em-reforma" value="em-reforma" class="check-status">
+                            <label for="status-em-reforma">Em reforma</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="dispensado" id="status-dispensado" value="dispensado" class="check-status">
+                            <label for="status-dispensado">Dispensado</label>
+                        </li>
+                    </ul>
+                </details>
+            </details>
+
+            <div class="listar-itens">
+                <table border="1">
+                    <thead>
+                        <td>Id</td>
+                        <td colspan="3">Nome</td>
+                        <td>Categoria</td>
+                        <td>Status</td>
+                        <td>Editar</td>
+                        <td>Deletar</td>
+                    </thead>
+                    <tbody id="lista-de-itens">
+                        <td>1</td>
+                        <td colspan="3">porca</td>
+                        <td colspan="1">ferramenta</td>
+                        <td>Em Uso</td>
+                        <td class="btn">Editar</td>
+                        <td class="btn">Deletar</td>  
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <script type="module" src="./scripts/app.js"></script>
+</body>
+</html>
