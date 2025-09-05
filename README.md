@@ -33,6 +33,7 @@ Para visualizar o projeto, basta abrir o arquivo `index.html` no seu navegador. 
 
 A estrutura do projeto está organizada da seguinte forma:
 
+```
 ├── css/
 │   ├── cadastrar.css
 │   ├── editar.css
@@ -48,5 +49,5 @@ A estrutura do projeto está organizada da seguinte forma:
 ├── cadastrar-item.html
 ├── editar.html
 └── index.html
-
+```
 ---
